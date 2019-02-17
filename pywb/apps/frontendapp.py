@@ -283,7 +283,7 @@ class FrontEndApp(object):
 
         wb_prefix = environ.get('SCRIPT_NAME')
         if wb_prefix:
-            wb_prefix += '/'
+            wb_prefix += '/via/'
 
         content = view.render_to_string(environ,
                                         wb_prefix=wb_prefix,
